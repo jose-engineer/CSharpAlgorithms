@@ -11,41 +11,41 @@ namespace Hash_Dictionary {
         }
 
         public static void DisplayFreqOfEachElement(int[] arr) {
-            Dictionary<int, int> hash = new Dictionary<int, int>();
+            Dictionary<int, int> hMap = new Dictionary<int, int>();
 
             for (int i = 0; i < arr.Length; i++) {
-                if (hash.ContainsKey(arr[i])) {
-                    hash[arr[i]]++;
+                if (hMap.ContainsKey(arr[i])) {
+                    hMap[arr[i]]++;
                     //hash[arr[i]] += 1;
                 } else {
-                    hash[arr[i]] = 1;
+                    hMap[arr[i]] = 1;
                 }
             }
 
-            foreach (var item in hash) {
+            foreach (var item in hMap) {
                 Console.WriteLine(item.Key + " -> " + item.Value);
             }
         }
 
-        //public static void DisplayFreqOfEachElement2(int[] arr) {
-        //    Dictionary<int, int> hash = new Dictionary<int, int>();
+        public static void DisplayFreqOfEachElement2(int[] arr) {
+            Dictionary<int, int> hMap = new Dictionary<int, int>();
 
-        //    foreach (var item in arr) {
-        //        hash[item] = 0;
-        //    }
+            foreach (var item in arr) {
+                hMap[item] = 0;
+            }
 
-        //    foreach (var item in arr) {
+            foreach (var item in arr) {
 
-        //        int count;
-        //        if (hash.TryGetValue(item, out count)) {
-        //            count++;
-        //            hash[item] = count;
-        //        }
-        //    }
+                int count;
+                if (hMap.TryGetValue(item, out count)) {
+                    count++;
+                    hMap[item] = count;
+                }
+            }
 
-        //    foreach (var item in hash) {
-        //        Console.WriteLine(item.Key + " - " + item.Value);
-        //    }
-        //}
+            foreach (var item in hMap) {
+                Console.WriteLine(item.Key + " - " + item.Value);
+            }
+        }
     }
 }

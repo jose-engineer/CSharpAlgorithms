@@ -33,17 +33,17 @@ namespace Array_Rotate {
             input[0] = last;
         }
 
-        //static void Rotate2(int[] input) {
-        //    int first = input[0];
+        static void RotateLeft2(int[] input) {
+            int first = input[0];
 
-        //    for (int i = 0; i < input.Length; i++) {                                                
+            for (int i = 0; i < input.Length; i++) {
 
-        //        if (!(i == input.Length - 1)) {
-        //            input[i] = input[i + 1];                    
-        //        } else {
-        //            input[input.Length - 1] = first;
-        //        }
-        //    }
-        //}
+                if (!(i == input.Length - 1)) {
+                    input[i] = input[i + 1];
+                } else {
+                    input[input.Length - 1] = first;
+                }
+            }
+        }
     }
 }

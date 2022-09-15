@@ -15,14 +15,14 @@ namespace Hash_HashSet {
 
         public static List<int> FindMissingElements(int[] first, int[] second) {
             List<int> missing = new List<int>();
-            HashSet<int> secondHash = new HashSet<int>();
+            HashSet<int> hSet = new HashSet<int>();
 
             foreach (var item in second) { //since location and order doesn't matter we use foreach loop
-                secondHash.Add(item);
+                hSet.Add(item);
             }
 
             foreach (var item in first) {
-                if (!secondHash.Contains(item)) {
+                if (!hSet.Contains(item)) {
                     missing.Add(item);
                 }
             }

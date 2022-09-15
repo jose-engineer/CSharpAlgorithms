@@ -12,18 +12,18 @@ namespace Array_BinarySearch {
 
         //We are assuming that the input array is sorted, and it's sorted in ascending order
         public static bool BinarySearch(int[] input, int n) {
-            int min = 0;
-            int max = input.Length -1;
+            int start = 0;
+            int end = input.Length -1;
             
-            while (min <= max) {
-                int mid = (min + max) / 2;
+            while (start <= end) {
+                int mid = (start + end) / 2;
 
                 if (n == input[mid]) {
                     return true;
                 } else if (n < input[mid]) {
-                    max = mid - 1;
+                    end = mid - 1;
                 } else {
-                    min = mid + 1;
+                    start = mid + 1;
                 }                
             }            
             return false;

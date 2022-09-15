@@ -35,15 +35,15 @@ namespace Hash_Operations {
 
                 //For working with data where each item is unique and order doesn't matter you can use HashSet
                 //In general HasSet is good if you need to check if a given item is a member of a certain group
-                HashSet<string> productCode = new HashSet<string>(); //Each value is unique
+                HashSet<string> hSet = new HashSet<string>(); //Each value is unique
 
-                productCode.Add("123ABC");
-                productCode.Add("2BCD");
-                productCode.Add("3FGH");
+                hSet.Add("123ABC"); //productCode
+                hSet.Add("2BCD");
+                hSet.Add("3FGH");
 
                 Console.WriteLine();
-                Console.WriteLine(productCode.Contains("4321"));
-                Console.WriteLine(productCode.Contains("2BCD"));
+                Console.WriteLine(hSet.Contains("4321"));
+                Console.WriteLine(hSet.Contains("2BCD"));
             }
         }
     }    

@@ -25,9 +25,9 @@ namespace Array_Reverse {
 
         public static void ReverseInPlace(int[] input) {            
             for (int i = 0; i < input.Length / 2; i++) {                
-                int temp = input[i];
+                int current = input[i];
                 input[i] = input[(input.Length - 1) - i];
-                input[(input.Length - 1) - i] = temp;
+                input[(input.Length - 1) - i] = current;
             }            
         }
     }

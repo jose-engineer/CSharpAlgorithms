@@ -17,7 +17,7 @@ namespace String_ParseAndSearch {
             if (string.IsNullOrEmpty(str)) {
                 return false;
             }
-            //With this for implementation we cut in half the search because we only seacr for even numbers from the begining
+            //With this for implementation we cut in half the search because we only search for even numbers from the begining
             for (int i = 0; i < (str.Length / 2) + 1; i=i+2) {
 
                 if (str[i] == item) {

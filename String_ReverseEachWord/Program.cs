@@ -5,10 +5,10 @@ using System.Text;
 namespace String_ReverseEachWord {
     class Program {
         static void Main(string[] args) {
-            Console.WriteLine(ReverseEachWord("Taylor is a grat worker"));
+            Console.WriteLine(ReverseEachWord("Taylor is a grat worker")); //rolyaT si a targ rekrow
             Console.WriteLine(ReverseEachWord(null));
-            Console.WriteLine(ReverseEachWord("racer racecar madam"));
-            Console.WriteLine(ReverseEachWord("what can I do today"));
+            Console.WriteLine(ReverseEachWord("racer racecar madam")); //recar racecar madam
+            Console.WriteLine(ReverseEachWord("what can I do today")); //tahw nac I od yadot
             Console.WriteLine(ReverseEachWord(" "));
         }
 

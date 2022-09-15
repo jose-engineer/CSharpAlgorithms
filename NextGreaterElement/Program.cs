@@ -9,18 +9,18 @@ namespace Stack_NextGreaterElement
     {
         static void Main(string[] args)
         {
-            int[] A = new int[] { 15, 8, 4, 10 };
-            int[] A2 = new int[] { 2 };
-            int[] A3 = new int[] { 2, 3 };
-            int[] A4 = new int[] { };
+            //int[] A = new int[] { 15, 8, 4, 10 };
+            //int[] A2 = new int[] { 2 };
+            //int[] A3 = new int[] { 2, 3 };
+            //int[] A4 = new int[] { };
 
-            PrintNextGreaterElement(A);
+            PrintNextGreaterElement(new int[] { 15, 8, 4, 10 }); //Expected: 4 --> 10, 8 --> 10, 10 --> -1, 15 --> -1
             Console.WriteLine();
-            PrintNextGreaterElement(A2);
+            PrintNextGreaterElement(new int[] { 2 }); //Expected: 2 --> -1
             Console.WriteLine();
-            PrintNextGreaterElement(A3);
+            PrintNextGreaterElement(new int[] { 2, 3 }); //Expected: 2 --> 3, 3 --> -1
             Console.WriteLine();
-            PrintNextGreaterElement(A4);
+            PrintNextGreaterElement(new int[] { }); //Expected: 
         }
 
         public static void PrintNextGreaterElement(int[] arr)

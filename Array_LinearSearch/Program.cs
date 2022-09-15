@@ -30,7 +30,8 @@ namespace Array_LinearSearch {
 
             return false;
             //return -1; //We don't return the finded value we return a sentinel value instead
-            //return null; //Also we can return "null" but we should use "?" in the return type this means "int?"
+            //return null; //Also, we can return "null" but we should use "?" in the RETURN type at the function definition,
+                            //like:   public static "int?" LinearSearch(){...}
         }
     }
 }
