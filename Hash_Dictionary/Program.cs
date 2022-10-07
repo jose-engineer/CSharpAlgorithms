@@ -15,8 +15,7 @@ namespace Hash_Dictionary {
 
             for (int i = 0; i < arr.Length; i++) {
                 if (hMap.ContainsKey(arr[i])) {
-                    hMap[arr[i]]++;
-                    //hash[arr[i]] += 1;
+                    hMap[arr[i]]++; //hash[arr[i]] += 1;                    
                 } else {
                     hMap[arr[i]] = 1;
                 }
